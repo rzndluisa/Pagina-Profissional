@@ -5,10 +5,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width, initial-scale=1.0">
     <title>Desenvolvedora Freelancer - Luisa Rezende</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1.6;
+            color: rgb(235, 235, 243);
+            background-color: rgb(118, 181, 218);
+        }
+
+        /* Container*/
+        .container {
+            width: 80%;
+            max-width: 1500px;
+            margin: 0 auto;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            padding: 1rem 0;
+        }
+
+        header .logo {
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: rgb(89, 187, 187)
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+            color: rgb(197, 139, 72)
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        header nav ul li {
+            margin: 0 1.5rem;
+        }
+
+        header nav ul li a {
+            color: aquamarine;
+            text-decoration: none;
+            font-weight: 700;
+            transition: color 0.3s;
+
+        }
+
+        header nav ul li a:hover {
+            color: yellow;
+        }
+
+        /* Seção de Introdução*/
+        #intro {
+            background: url('https://www.valuehost.com.br/blog/wp-content/uploads/2016/10/linguagens-de-programacao.jpeg.webp')no-repeat center center/cover;
+            color: white;
+            padding: 5rem 0;
+            text-align: center;
+
+        }
+
+        #intro h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: rgb(20, 61, 109);
+        }
+
+        #intro p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        #intro .btn {
+            background-color: blue;
+            color: white;
+            padding: 0.8rem 2rem;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 100px;
+            transition: background-color 0.3s;
+        }
+
+        #intro .btn:hover {
+            background-color: rgb(32, 23, 151);
+        }
+
+        /*Seção Sobre*/
+        #sobre {
+            padding: 4rem 0;
+            background-color: gray;
+        }
+
+        #sobre h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            color: aqua;
+        }
+
+        #sobre p {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+            color: black;
+        }
+
+        #sobre .social-links {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        #sobre .social-links a {
+            color:aqua;
+            margin: 0.1 rem;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        #sobre .social-links a:hover {
+            color:brown
+            color(srgb red green blue)
+        }
+    </style>
     <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
     <header>
         <div class="container">
             <div class="logo">
@@ -25,7 +165,7 @@
             </nav>
         </div>
     </header>
-    <!--Seção de Comentário-->
+    <!--Seção de Introdução-->
     <section id="intro">
         <div class="container">
             <h2>Transformando ideias em código</h2>
@@ -47,7 +187,7 @@
     </section>
     <!--Seção Habilidades-->
     <section id="skills">
-        <div class="skill">
+        <div class="container">
             <h3>React.js</h3>
             <div class="progress">
                 <div class="progress-bar" style="width: 5%;">
@@ -65,14 +205,15 @@
                     <div class="progress-bar" style="width: 80%;"></div>
                 </div>
             </div>
-        </div>
-        <div class="skill">
-            <h3>HTML</h3>
-            <div class="progress">
-                <div class="progress-bar" style="width: 95%;">
+            <div class="skill">
+                <h3>HTML</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 95%;">
+                    </div>
                 </div>
             </div>
         </div>
+
     </section>
     <!--Seção Portifólio-->
     <section id="portfolio">
@@ -113,8 +254,8 @@
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
                 <label for="mensagem">Mensagem:</label>
-<textarea id="mensagem" name="mensagem" required></textarea>
-<button type="submit">Enviar</button>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+                <button type="submit">Enviar</button>
             </form>
         </div>
     </section>
